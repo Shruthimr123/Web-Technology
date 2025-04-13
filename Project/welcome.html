@@ -1,0 +1,33 @@
+<!-- welcome.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <link rel="stylesheet" href="./welcome.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Logout</a></li>
+ 
+    </ul>
+  </nav>
+  <div id="container">
+    <h1 id="greeting"></h1>
+    <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="User Image">
+  </div>
+  <script>
+    // Get from localStorage
+    const name = sessionStorage.getItem("username");
+    //const image = localStorage.getItem("userImage");
+
+    // Set content
+    document.getElementById("greeting").innerHTML = `Welcome, ${name}!`;
+   // document.getElementById("profilePic").src = image;
+  </script>
+</body>
+</html>
