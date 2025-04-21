@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 250px;
+    width: 350px;
+    background-color: rgb(166, 212, 212);
+    margin: 150px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+}
+#btn{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#btn1,#btn2,#btn3{
+    margin-top: 40px;
+    padding: 8px;
+    background-color: rgb(28, 164, 176);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+#btn2{
+    margin-left: 10px;
+   margin-right:10px ;
+}
+
+#btn button:hover {
+    transform: scale(1.05);
+  }

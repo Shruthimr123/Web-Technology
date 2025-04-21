@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    height: 420px;
+    width: 420px;
+    background-color: #ffffff;
+    margin: 80px auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#first {
+    padding: 20px 0;
+}
+
+#input {
+    height: 40px;
+    width: 62%;
+    padding: 0 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #f1f3f5;
+    font-size: 15px;
+}
+
+#btn {
+    height: 40px;
+    padding: 0 16px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+#btn:hover {
+    background-color: #857ff3;
+}
+
+#btn:active {
+    background-color: #a49be3;
+}
+
+#label {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    margin-left: 12px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+}
+
+#sub-first {
+    margin-top: 20px;
+}
+
+#todo-list {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    margin: 10px 0;
+    background-color: #f3f0ff;
+    border-left: 5px solid #6c63ff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item input[type='checkbox'] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.todo-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.todo-item .completed {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #d63f3f;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
